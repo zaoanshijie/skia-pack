@@ -86,7 +86,7 @@ def main():
     crt_flag = "/MDd" if build_type == "Debug" else "/MD"
     args += [
       'skia_use_direct3d=true',
-      'extra_cflags=["-DSK_FONT_HOST_USE_SYSTEM_SETTINGS",'+crt_flag+']',
+      f'extra_cflags=["-DSK_FONT_HOST_USE_SYSTEM_SETTINGS","{crt_flag}"]'
     ]
     if 'windows' == host:
       clang_path = shutil.which('clang-cl.exe')
