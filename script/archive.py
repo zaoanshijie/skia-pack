@@ -72,7 +72,10 @@ def main():
     'third_party/externals/swiftshader/include/**/*',
     'third_party/externals/zlib/LICENSE',
     'third_party/externals/zlib/*.h',
-    "third_party/icu/*.h"
+    "third_party/icu/*.h",
+    "tools/**/*.h",
+    "tools/**/*.cpp",
+    "tools/**/*.mm",
   ]
 
   dist = 'Skia-' + version + '-' + target + '-' + build_type + '-' + machine + classifier + '.zip'
